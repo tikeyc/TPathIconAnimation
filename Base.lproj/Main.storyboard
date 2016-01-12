@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sUK-Bf-xSs">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3t-br-L0V">
+                                <rect key="frame" x="160" y="0.0" width="160" height="284"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="270°-360°区间">
+                                    <color key="titleColor" red="0.94117647059999998" green="0.35294117650000001" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="typeButtonActions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mrA-WM-cqC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpC-vY-2iJ">
+                                <rect key="frame" x="0.0" y="284" width="160" height="284"/>
+                                <color key="backgroundColor" red="0.76665968745470525" green="0.96267445986439004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="0°-90°区间">
+                                    <color key="titleColor" red="0.94117647059999998" green="0.35294117650000001" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="typeButtonActions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9eS-iC-ZWx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osf-Ia-QIq">
+                                <rect key="frame" x="160" y="284" width="160" height="284"/>
+                                <color key="backgroundColor" red="1" green="0.71453095864575877" blue="0.50056929274967732" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="90°-180°区间">
+                                    <color key="titleColor" red="0.94117647059999998" green="0.35294117650000001" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="typeButtonActions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7EN-59-fSl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcG-Ws-vYY">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="284"/>
+                                <color key="backgroundColor" red="0.66360259119999998" green="1" blue="0.83712007290000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="270°-360°区间">
+                                    <color key="titleColor" red="0.94117647059999998" green="0.35294117650000001" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="typeButtonActions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iM0-Wn-QUt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="osf-Ia-QIq" firstAttribute="width" secondItem="KpC-vY-2iJ" secondAttribute="width" id="3cb-mg-PP7"/>
+                            <constraint firstItem="osf-Ia-QIq" firstAttribute="leading" secondItem="KpC-vY-2iJ" secondAttribute="trailing" id="7OQ-B0-OFh"/>
+                            <constraint firstItem="KpC-vY-2iJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="A3y-1Q-AMc"/>
+                            <constraint firstItem="osf-Ia-QIq" firstAttribute="top" secondItem="n3t-br-L0V" secondAttribute="bottom" id="Aou-jh-GKN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="n3t-br-L0V" secondAttribute="trailing" constant="-20" id="Dsn-8t-ffg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="osf-Ia-QIq" secondAttribute="trailing" constant="-20" id="FHJ-lK-FBe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="osf-Ia-QIq" secondAttribute="bottom" id="Gxe-oz-DVf"/>
+                            <constraint firstItem="BcG-Ws-vYY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Iul-Dh-g1E"/>
+                            <constraint firstItem="n3t-br-L0V" firstAttribute="leading" secondItem="BcG-Ws-vYY" secondAttribute="trailing" id="MAP-91-9E9"/>
+                            <constraint firstItem="n3t-br-L0V" firstAttribute="width" secondItem="BcG-Ws-vYY" secondAttribute="width" id="OT2-oZ-4GY"/>
+                            <constraint firstItem="KpC-vY-2iJ" firstAttribute="top" secondItem="BcG-Ws-vYY" secondAttribute="bottom" id="PN6-9r-Nnp"/>
+                            <constraint firstItem="osf-Ia-QIq" firstAttribute="height" secondItem="n3t-br-L0V" secondAttribute="height" id="cCu-vi-0t0"/>
+                            <constraint firstItem="n3t-br-L0V" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="m78-JM-Qgi"/>
+                            <constraint firstItem="KpC-vY-2iJ" firstAttribute="height" secondItem="BcG-Ws-vYY" secondAttribute="height" id="sIv-c4-6ZV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KpC-vY-2iJ" secondAttribute="bottom" id="tHD-Iz-81l"/>
+                            <constraint firstItem="BcG-Ws-vYY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="xOg-VD-6jc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zAH-rA-8an"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-297" y="226"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rrI-Ks-MtV">
+            <objects>
+                <navigationController id="sUK-Bf-xSs" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="za9-gg-tzO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qHd-EH-IHI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Npm-oz-DB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-668.5" y="226.5"/>
+        </scene>
+    </scenes>
+</document>
