@@ -3,7 +3,7 @@
 //  Estate
 //
 //  Created by tikeyc on 14-5-23.
-//  Copyright (c) 2014年 Andy li. All rights reserved.
+//  Copyright (c) 2014年 tikeyc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

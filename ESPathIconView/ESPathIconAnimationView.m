@@ -3,7 +3,7 @@
 //  Estate
 //
 //  Created by tikeyc on 14-5-23.
-//  Copyright (c) 2014年 Andy li. All rights reserved.
+//  Copyright (c) 2014年 tikeyc. All rights reserved.
 //
 
 #import "ESPathIconAnimationView.h"
@@ -99,7 +99,7 @@
         titles = [THelper exchangeArrayItem:titles];
     }
     __weak ESPathIconAnimationView *this = self;
-    int count = imgName.count - 1;
+    long int count = imgName.count - 1;
     _pathIcons = [NSMutableArray array];
     for (int i = 0; i < 4; i++) {
         __block ESPathIcon *pathIcon = [[ESPathIcon alloc] initWithImageName:imgName[i] withLabelTitle:titles[i]];
